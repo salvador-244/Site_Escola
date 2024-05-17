@@ -1,0 +1,154 @@
+/* Adicionar as propriedades margin e padding no seletor universal (asterisco) */
+* {
+    margin: 0; /*altera o espaçamento externo*/
+    padding: 0; /*altera o espaçamento interno*/
+    
+} /**/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/*Iniciar Seção Cabeçalho*/
+
+.cabecalho {
+    background-color: #424E61; /*cor de fundo*/
+    color: #ffffff; /*cor*/
+    display: flex; /*propriedade flex para organizar os itens do cabeçalho, lado a lado*/
+    justify-content: space-around; /*aliha as imagens e os textos com espaçamento entre eles */
+    align-items: center; /*alinhamento de itens centralizado*/
+    padding: 24px 0; /*altera o espaçamento interno*/
+    
+}
+
+.cabecalho-imagem {
+    width: 8%; /*largura da imagem*/
+    border-radius: 22px; /*para definir bordas arredondadas da imagem*/ 
+}
+
+/*A lista não ordenada (ul) precisa estar alinhada em uma única linha.
+Crie um seletor para a classe .cabeçalho-lista-item, adicionando nele
+a propriedade display com o valor inline-block*/
+/*Aumente os espaçamentos entre os textos com a propriedade margin de valor 0 16px:*/
+/*Aumente a fonte através da propriedade font-size de valor 24px.*/
+
+.cabecalho-lista-item {
+    display: inline-block; /*alinha os itens da lista em uma única linha*/
+    margin: 0 16px; /*altera o espaçamento entre os itens da lista*/
+    font-size: 24px; /*altera o tamanho da fonte*/
+}
+
+.cabecalho-lista-item a {
+    text-decoration: none; /*remove as decorações do texto */
+    color: #000000; /*cor*/
+}
+
+/*Efeito alterar a cor quando passa o mouse*/
+a:hover {
+    color: #16a5f8; /*cor*/
+}
+
+/*alterar a cor quando clica com o mouse*/
+a:active{
+    color: rgb(199, 215, 246);
+}
+
+/*fim da seção cabeçalho*/
+
+/*INICIO SEÇÃO ESCOLA*/
+
+.escola{
+    background-image: linear-gradient(#424E61, #16a5f8); /*define um gradiente linear como a imagem de fundo*/
+    color: #000000; /*cor*/
+    display: flex; /*organizar a estrutura do conteúdo*/
+    justify-content: center; /*alinha imagem e os textos com espaçamentos entre eles*/
+    padding: 24px 0; /*Altera o espaçamento interno*/
+}
+
+.escola-div-conteudo {
+    width: 45%; /*largura*/
+    color: #000000; /*cor*/
+}
+
+.escola-titulo {
+    padding: 24px 0; /*Altera o espaçamento interno, o primeiro valor bordas verticais(superior e inferior e o
+    segundo valor bordas horizontais(esquerda e direita)*/
+    font-size: 25px; /*tamanho da fonte*/
+}
+
+.escola-texto {
+    font-size: 20px; /*tamanho da fonte*/
+}
+
+.imagem-escola{
+    width: 30%; /*largura*/
+    height: 300px; /*altura*/
+    border-radius: 82px; /*para definir bordas arredondadas da imagem*/
+}
+
+/*  FIM DA SEÇÃO ESCOLA*/
+
+/*INICIO SEÇÃO ESTUDANTE*/
+
+.estudante{
+    background-color: #16a5f8; /*cor de fundo*/
+    color: #000000; /*cor*/
+}
+
+.estudante-titulo{
+    padding: 24px 0; /*Altera o espaçamento interno, o primeiro valor bordas verticais(superior e inferior e o
+    segundo valor bordas horizontais(esquerda e direita)*/
+    margin: 0 120px; /*alinhar o espaçamento*/
+    font-size: 25px; /*tamanho da fonte*/
+}
+
+p{
+    padding: 0 120px; /*alinhar o espaçamento*/
+    font-size: 20px; /*tamanho da fonte*/
+}
+
+.estudantes-todos{
+    display: grid; /*especificar o espaçamento do display (o grid organiza por colunas)*/
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0 60px; /*Altera o espaçamento interno, o primeiro valor bordas verticais(superior e inferior e o
+    segundo valor bordas horizontais(esquerda e direita)*/ 
+}
+
+.estudante-div{
+    text-align: center; /*texto centralizado*/
+    padding: 12px 0; /*Altera o espaçamento interno, o primeiro valor bordas verticais(superior e inferior e o
+    segundo valor bordas horizontais(esquerda e direita)*/
+}
+
+.estudante-imagem{
+    width: 120px; /*largura*/
+}
+
+.estudante-nome{
+    font-size: 14px; /*tamanho da fonte*/
+}
+
+.estudante-icone{
+    width: 24px; /*largura*/
+    padding: 4px 8px; /*Altera o espaçamento interno, o primeiro valor bordas verticais(superior e inferior e o
+    segundo valor bordas horizontais(esquerda e direita)*/
+}
+/*FIM SEÇÃO ESTUDANTE*/
+
+/*SEÇÃO RODAPÉ*/
+
+.rodape{
+    background-image: linear-gradient(#16a5f8, #424E61);/*define um gradiente linear como a imagem de fundo*/ 
+}
+
+.copyright{
+    text-align: center; /*texto centralizado*/
+    height: 100px; /*altura*/
+    line-height: 100px; /*altura da linha*/
+    font-size: 12px; /*tamanho da fonte*/
+}
+
+/*FIM DA SEÇÃO RODAPÉ*/
+
+
